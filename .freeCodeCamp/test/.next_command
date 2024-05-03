@@ -1,0 +1,88 @@
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir periodic_table
+cd periodic_table
+git init
+git checkout main
+git checkout main
+ls --color=auto -a
+git status
+git brench
+git branch
+git checkout -b main
+git branch
+git status
+touch elements.sh
+git add .
+git commit -m "add element.sh"
+git status
+git status
+touch element.sh
+git status
+git add .
+git commit -m "add element.sh"
+chmod +x element.sh
+git add .
+git commit -m "add prompt"
+git rebase -i HEAD~3
+git rebase -i HEAD~2
+git log --oneline
+git commit --amend
+git status
+git add .
+git status
+git log --oneline
+git reset --hard HEAD~1
+git log --oneline
+git reset --hard HEAD~2
+git reset --hard HEAD~3
+git log --oneline
+git reset --hard HEAD~1
+git log --oneline
+git reset --hard HEAD~0
+git log --oneline
+git commit --amend
+add .
+git add .
+git status
+git status
+git add .
+git status
+git add .
+git status
+git commit -m "feat: add element.sh"
+git add .
+git status
+git commit -m "feat: add prompt"
+chmod +x element.sh
+git status
+git add .
+git commit -m "fix: add prompt"
+git log --oneline
+sh element.sh
+sh element.sh
+sh element.sh 1
+git add .
+git commit -m "feat: complete"
