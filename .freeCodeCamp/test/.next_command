@@ -86,3 +86,7 @@ sh element.sh
 sh element.sh 1
 git add .
 git commit -m "feat: complete"
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+git add .
+git commit -m "feat: sql"
+git status
